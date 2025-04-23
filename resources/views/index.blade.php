@@ -1,6 +1,9 @@
-<div>
-   <h1>Hello Im a blade template!</h1>
- </div>
+@extends('layouts.app')
+
+@section('title', 'Task Details')
+
+@section('content')
+
  
 
 <!-- <div>
@@ -14,7 +17,7 @@
     @endif      
 </div> -->
 
-//adding  link per item
+<!-- adding  link per item -->
 <div>
     @forelse ($tasks as $task)
      <div>
@@ -24,3 +27,4 @@
      <div>There are no tasks!</div>
    @endforelse
 </div>
+@endsection
