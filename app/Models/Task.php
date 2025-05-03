@@ -8,4 +8,11 @@ class Task extends Model
 {
     //
     use HasFactory;
+    protected $fillable = ['title', 'description', 'long_description'];
+      public function toggleComplete()
+     {
+        //accesing the value of completed= then flipping it
+         $this->completed = !$this->completed;
+         $this->save();
+     }
 }
