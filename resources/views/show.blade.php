@@ -3,7 +3,8 @@
 @section('title', $task->title)
 
 @section('content')
-<div class="">
+<div class="container mx-auto mt-20  max-w-lg flex flex-col items-center justify-center">
+  <h1 class="mb-4 text-2xl text-center font-bold">@yield('title')</h1>
   <div class="border border-gray-300 rounded-lg p-6 shadow-sm">
     <div class=" mx-auto mt-5">
       <p class="mb-4 text-slate-700">{{ $task->description }}</p>

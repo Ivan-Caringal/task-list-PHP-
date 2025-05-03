@@ -37,11 +37,12 @@
    @yield('styles')
  </head>
  
- <body class="container mx-auto mt-10 mb-10 max-w-lg">
-   <h1  class="mb-4 text-2xl text-center font-bold">@yield('title')</h1>
+ <body >
+  
+   
    <div>
     @if (session()->has('success'))
-       <div style="color: green; font-weight: bold;">{{ session('success') }}</div>
+       <div class="container mx-auto mt-20 max-w-lg flex flex-col items-center justify-center text-center" style="color: green; font-weight: bold;">{{ session('success') }}</div>
     @endif
      @yield('content')
    </div>

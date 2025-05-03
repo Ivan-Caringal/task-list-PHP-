@@ -3,8 +3,10 @@
 @section('title', 'Task Details')
 
 @section('content')
-<div class="flex items-center justify-center  w-full " style="height: 500px;">
+<div class="flex  mt-10  w-full flex flex-col items-center min-h-screen">
+  <h1  class="mb-4 text-2xl text-center font-bold">@yield('title')</h1>
   <div class="border border-gray-300 rounded-lg p-6 shadow-sm">
+    
     <!-- adding  link per item -->
     <div>
         @forelse ($tasks as $task)

@@ -12,5 +12,4 @@
  
  @section('content')
    @include('form') 
-   
  @endsection
